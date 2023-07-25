@@ -1,0 +1,52 @@
+@import "./theme/theme";
+@import "../src/assets/theme/admin-lte/build/scss/adminlte.scss";
+@import "node_modules/@ng-select/ng-select/themes/default.theme.css";
+
+html {
+  font-size: 16px;
+}
+
+html,
+body {
+  font-family: Inter;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #C5CEE0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8F9BB3;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8F9BB3;
+}
+
+.toasts-top-right {
+  top: 16px;
+  right: 16px;
+}
+
+.back-to-top {
+  color: #fff !important;
+  right: 16px;
+  bottom: 64px;
+}
+
+.ng-select .ng-select-container {
+  height: calc(2.25rem + 2px) !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

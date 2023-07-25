@@ -1,0 +1,29 @@
+<aside class="main-sidebar navbar-white">
+  <!-- elevation-4 -->
+  <a href="/home" class="brand-link bg-primary">
+    <!-- <img src="" alt="logo" class="brand-image"> -->
+    <span class="brand-text text-white font-weight-bold">{{
+      'app_name' | translate
+    }}</span>
+  </a>
+
+  <div class="sidebar">
+    <hr />
+    <nav *ngIf="isLocal" class="">
+      <ul
+        class="nav nav-pills nav-sidebar flex-column"
+        data-widget="treeview"
+        role="menu"
+        data-accordion="false">
+        <li class="nav-item">
+          <a
+            [routerLink]="urls.exampleDocument"
+            routerLinkActive="active"
+            class="nav-link">
+            <p>Tài liệu code</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</aside>

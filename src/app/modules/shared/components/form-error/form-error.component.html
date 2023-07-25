@@ -1,0 +1,9 @@
+<div *ngIf="shouldShowErrors()">
+  <div class="w-100" *ngFor="let error of listOfErrors()">
+    <span
+      class="error invalid-feedback err-{{ detail.name || 'control' }}"
+      style="display: inline"
+      >{{ error | translate }}</span
+    >
+  </div>
+</div>

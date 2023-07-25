@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <app-header [toggleSideBar]="false" [logoHeader]="true"></app-header>
+  <div class="content-wrapper" style="min-height: 100vh">
+    <router-outlet></router-outlet>
+    <a
+      id="back-to-top"
+      (click)="topFunction()"
+      class="btn btn-primary back-to-top"
+      style="display: none"
+      role="button"
+      aria-label="Scroll to top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+  </div>
+  <app-footer *ngIf="false"></app-footer>
+</div>

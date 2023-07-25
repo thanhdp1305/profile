@@ -1,0 +1,20 @@
+<div class="input-group date" [attr.id]="id" data-target-input="nearest">
+  <input
+    type="text"
+    class="form-control datetimepicker-input"
+    [attr.id]="'date_ip_' + id"
+    [attr.data-target]="'#' + id"
+    data-inputmask-alias="datetime"
+    data-inputmask-inputformat="dd/mm/yyyy"
+    data-mask=""
+    inputmode="numeric"
+    [disabled]="disabled || null"
+    placeholder="dd/mm/yyyy"
+    (change)="handleChangeInput($event)" />
+  <div
+    class="input-group-append"
+    [attr.data-target]="'#' + id"
+    data-toggle="datetimepicker">
+    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+  </div>
+</div>

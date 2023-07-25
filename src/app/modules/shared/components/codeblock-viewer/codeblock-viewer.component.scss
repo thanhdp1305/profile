@@ -1,0 +1,190 @@
+//Style code block
+.method-example {
+    border-radius: 8px;
+    background: #EEF2F7;
+    overflow: auto;
+}
+
+.method-example-topbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem;
+    background: #EEF2F7;
+    border-radius: 8px 8px 0px 0px;
+
+    .method-example-url {
+        flex-grow: 1;
+        padding: 0 1rem;
+        color: #171447;
+    }
+
+    .copyClipBoard {
+        // color: #171447;
+        // text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.method-example-title {
+    color: #171447;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+
+    &.method-name {
+        &.method-get {
+            color: #171447;
+        }
+
+        &.method-post {
+            color: #171447;
+        }
+
+        &.method-put {
+            color: #171447;
+        }
+
+        &.method-update {
+            color: #171447;
+        }
+
+        &.method-delete {
+            color: #171447;
+        }
+    }
+}
+
+.method-example {
+    color: #171447;
+    font-size: 1rem;
+    font-weight: 500;
+    // text-transform: uppercase;
+    // -webkit-user-select: none;
+    // -moz-user-select: none;
+    // -ms-user-select: none;
+    // user-select: none;
+    // pointer-events: none;
+
+    pre.codeblock-pre {
+        flex-grow: 1;
+        // overflow-x: auto;
+        margin: 0;
+        height: 100%;
+        color: #171447;
+        direction: ltr;
+        text-align: left;
+        white-space: pre;
+        word-spacing: normal;
+        -moz-tab-size: 4;
+        tab-size: 4;
+        -webkit-hyphens: none;
+        -ms-hyphens: none;
+        hyphens: none;
+        padding: 0 20px 20px;
+        background: #EEF2F7;
+
+        &.line-numbers {
+            padding: 0.7rem 3rem;
+        }
+
+        code {
+            font-family: Menlo, Consolas, monospace !important;
+
+            * {
+                font-family: Menlo, Consolas, monospace !important;
+            }
+        }
+    }
+}
+
+.codeblock-content {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    font-size: 1rem;
+    line-height: 1rem;
+    min-height: inherit;
+    max-height: 300px;
+    // overflow-y: auto;
+    width: 100%;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+    font-size: 1rem;
+}
+
+div.prism-live {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+}
+
+textarea.prism-live,
+pre.prism-live {
+    padding: 0.2rem 0.5rem;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+textarea.prism-live {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    color: transparent;
+    cursor: text;
+    white-space: pre;
+    border: 0;
+    outline: none;
+    background: transparent;
+    resize: none;
+    --selection-background: rgb(255, 255, 255, 35%);
+    --selection-color: hsla(0, 0%, 100%, 0.8);
+    padding: 0.7rem 0.9rem;
+    line-height: 1.5;
+    font-family: Menlo, Consolas, monospace !important;
+    caret-color: #ffffff8a;
+}
+
+@supports (not (caret-color: black)) and (-webkit-text-fill-color: black) {
+    textarea.prism-live {
+        color: inherit;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+textarea.prism-live::-moz-selection {
+    background: var(--selection-background);
+    color: var(--selection-color);
+}
+
+textarea.prism-live::selection {
+    background: var(--selection-background);
+    color: var(--selection-color);
+}
+
+pre.prism-live {
+    flex: 1;
+    position: relative;
+    pointer-events: none;
+    overflow: hidden;
+    max-height: 100%;
+    --scrollbar-width: 17px;
+    padding-bottom: var(--scrollbar-width);
+    padding-right: var(--scrollbar-width);
+}
+
+pre.prism-live > code:empty::before {
+    content: " ";
+}

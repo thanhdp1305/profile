@@ -1,0 +1,21 @@
+<div class="method-example">
+  <div class="method-example-topbar">
+    <button
+      class="btn btn-outline-primary d-flex copyClipBoard"
+      style="font-size: 14px; float: right"
+      (click)="copyClipboard($event, codeContent)">
+      <span *ngIf="isSubmit" class="material-icons mr-1">
+        <i class="fas fa-copy pr-1"></i>
+        <span>Copy</span>
+      </span>
+      <span *ngIf="!isSubmit" class="material-icons mr-1">
+        <i class="fas fa-copy pr-1"></i>
+        <span>Copied</span>
+      </span>
+    </button>
+  </div>
+  <div class="codeblock-content line-numbers">
+    <pre
+      class="codeblock-pre"><code #codeContent class="language-{{ type }}" [innerHTML]="highLightCode(code, type)"></code></pre>
+  </div>
+</div>
