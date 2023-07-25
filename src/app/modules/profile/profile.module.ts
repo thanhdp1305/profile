@@ -8,9 +8,11 @@ import { NgSelectModule } from '@ng-select/ng-select';
 import { Roles } from '../shared/commons/roles';
 import { ModalControl } from '../shared/services/modal-control.service';
 import { ProfileComponent } from './components/profile/profile.component';
+import { TimelineComponent } from './components/profile/elements/timeline/timeline.component';
+import { ProjectsComponent } from './components/profile/elements/projects/projects.component';
 
 @NgModule({
-  declarations: [ProfileComponent],
+  declarations: [ProfileComponent, TimelineComponent, ProjectsComponent],
   imports: [
     CommonModule,
     TranslateModule,

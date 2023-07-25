@@ -8,7 +8,8 @@ html {
 
 html,
 body {
-  font-family: Inter;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 16px;
 }
 
 /* width */
@@ -49,4 +50,17 @@ body {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.card {
+  box-shadow: none;
+}
+
+.btn {
+  box-shadow: none;
+  border: 0;
+}
+
+.badge {
+  border-radius: 0.35rem;
 }
