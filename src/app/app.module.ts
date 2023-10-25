@@ -81,8 +81,8 @@ export class AppModule {
     // Config Ngx-Translate
     translateCacheService.init();
     translate.addLangs(['en', 'vi']);
-    const browserLang = translateCacheService.getCachedLanguage() || 'vi';
-    translate.use(browserLang.match(/en|vi/) ? browserLang : 'vi');
+    const browserLang = 'en'; //translateCacheService.getCachedLanguage() || 'vi';
+    translate.use(browserLang.match(/en|vi/) ? browserLang : 'en');
 
     //Ng-select config
     this.config.notFoundText = 'Không tìm thấy kết quả';
