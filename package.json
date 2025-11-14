@@ -8,6 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "dev": "ng serve",
+    "build:docs": "ng build --output-path docs --base-href /profile/",
     "build-prod": "ng build --configuration production",
     "build-staging": "ng build --configuration staging",
     "build-demo": "ng build --configuration demo",
